@@ -1,0 +1,29 @@
+{
+  "name": "wedding-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.2.0",
+    "gulp-imagemin": "^6.0.0",
+    "imagemin-jpeg-recompress": "^6.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp",
+    "minify": "gulp minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vic10us/wedding-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vic10us/wedding-site/issues"
+  },
+  "homepage": "https://github.com/vic10us/wedding-site#readme"
+}
