@@ -51,6 +51,26 @@
         $(thisAlert).removeClass('alert-validate');
     }
 
+    function shuffle(array) {
+        var currentIndex = array.length, temporaryValue, randomIndex;
+      
+        // While there remain elements to shuffle...
+        while (0 !== currentIndex) {
+      
+          // Pick a remaining element...
+          randomIndex = Math.floor(Math.random() * currentIndex);
+          currentIndex -= 1;
+      
+          // And swap it with the current element.
+          temporaryValue = array[currentIndex];
+          array[currentIndex] = array[randomIndex];
+          array[randomIndex] = temporaryValue;
+        }
+      
+        return array;
+      }
+      
+
     
     
    /*==================================================================
@@ -60,7 +80,8 @@
         var delay = 5000;
         var speed = 1000;
         var itemSlide = $(this).find('.simpleslide100-item');
-        var nowSlide = 0;
+        itemSlide = shuffle(itemSlide);
+        var nowSlide = 12;
 
         $(itemSlide).hide();
         $(itemSlide[nowSlide]).show();
